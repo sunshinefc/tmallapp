@@ -1,0 +1,61 @@
+@mixin center{
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom:0;
+  margin: auto;
+}
+%center{
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom:0;
+  margin: auto;
+}
+@mixin updowm{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+@mixin leftright{
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+@mixin cube($size){
+  width: $size;
+  height: $size;
+}
+@mixin circle($size:40px){
+  @include cube($size);
+  border-radius: 50%;
+}
+
+$m-size:768px;
+@mixin onm{
+  @media screen and (max-width:$m-size){
+    @content;
+  }
+}
+
+$s-size:480px;
+@mixin ons{
+  @media screen and (max-width:$s-size){
+    @content;
+  }
+}
+
+@mixin useRem($design-size){
+  $design-list-size: 320px,360px,375px,380px,412px,414px,$design-size;
+  @each $size in $design-list-size {
+    @media screen and (min-width: #{$size}){
+      html{
+        font-size: 100px * $size / $design-size;
+      }
+    }
+  }
+}

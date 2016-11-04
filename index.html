@@ -1,0 +1,961 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="todolist">
+    <link rel="apple-touch-icon" href="img/icon2.png">
+    <link rel="icon" href="img/icon2.png">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/swiper-3.3.1.min.js"></script>
+    <script src="js/js.cookie.js"></script>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>天猫</title>
+</head>
+<body>
+
+<!--侧栏-->
+<div class="tab-box">
+    <div class="tab-kongbai">
+        <div class="tab-rightb"></div>
+        <div class="tab-bottomb"></div>
+    </div>
+    <div class="tab-blank">点击此处隐藏</div>
+    <div class="tab">
+        <div class="tab-header">全部分类</div>
+        <div class="content">
+            <div class="left">
+                <div class="tit" style="background: #fff">为您推荐</div>
+                <div class="tit">国际大牌</div>
+                <div class="tit">天猫国际</div>
+                <div class="tit">女装</div>
+                <div class="tit">女鞋</div>
+                <div class="tit">男装</div>
+                <div class="tit">男鞋</div>
+                <div class="tit">内衣</div>
+                <div class="tit">母婴</div>
+                <div class="tit">手机</div>
+                <div class="tit">数码</div>
+                <div class="tit">家电</div>
+                <div class="tit">美妆</div>
+                <div class="tit">箱包</div>
+                <div class="tit">运动</div>
+                <div class="tit">户外</div>
+                <div class="tit">家装</div>
+                <div class="tit">家纺</div>
+                <div class="tit">居家</div>
+                <div class="tit">饰品</div>
+                <div class="tit">食品</div>
+                <div class="tit">生鲜</div>
+                <div class="tit">汽车摩托</div>
+                <div class="tit">医药</div>
+                <div class="tit">图书</div>
+            </div>
+            <div class="right">
+                <div class="one">
+                    <div class="biao">为您推荐</div>
+                    <div class="top">
+                        <div class="cont">
+                            <div class="tu"><img src="images/tuijian1.jpg_.webp" alt=""></div>
+                            <div class="zi">手机配件</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/tuijian2.jpg_.webp" alt=""></div>
+                            <div class="zi">笔记本</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/tuijian3.png_.webp" alt=""></div>
+                            <div class="zi">床</div>
+                        </div>
+                    </div>
+                    <div class="top">
+                        <div class="cont">
+                            <div class="tu"><img src="images/tuijian4.jpg_.webp" alt=""></div>
+                            <div class="zi">DIY电脑</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/tuijian5.png_.webp" alt=""></div>
+                            <div class="zi">柜类</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/tuijian6.jpg_.webp" alt=""></div>
+                            <div class="zi">平板电脑</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="biao">数码</div>
+                    <div class="top">
+                        <div class="cont">
+                            <div class="tu"><img src="images/shuma1.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">手机配件</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/shuma2.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">笔记本</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/shuma3.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">床</div>
+                        </div>
+                    </div>
+                    <div class="top">
+                        <div class="cont">
+                            <div class="tu"><img src="images/shuma4.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">DIY电脑</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/shuma5.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">柜类</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/shuma6.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">平板电脑</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="biao">手机</div>
+                    <div class="top">
+                        <div class="cont">
+                            <div class="tu"><img src="images/shouji1.png_.webp.jpg" alt=""></div>
+                            <div class="zi">手机配件</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/shouji2.png_.webp.jpg" alt=""></div>
+                            <div class="zi">笔记本</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/shouji3.png_.webp.jpg" alt=""></div>
+                            <div class="zi">床</div>
+                        </div>
+                    </div>
+                    <div class="top">
+                        <div class="cont">
+                            <div class="tu"><img src="images/shouji4.png_.webp.jpg" alt=""></div>
+                            <div class="zi">DIY电脑</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/shouji5.png_.webp.jpg" alt=""></div>
+                            <div class="zi">柜类</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/shouji6.png_.webp.jpg" alt=""></div>
+                            <div class="zi">平板电脑</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="biao">家装</div>
+                    <div class="top">
+                        <div class="cont">
+                            <div class="tu"><img src="images/jiazhuang1.png_.webp" alt=""></div>
+                            <div class="zi">手机配件</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/jiazhuang2.png_.webp" alt=""></div>
+                            <div class="zi">笔记本</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/jiazhuang3.png_.webp" alt=""></div>
+                            <div class="zi">床</div>
+                        </div>
+                    </div>
+                    <div class="top">
+                        <div class="cont">
+                            <div class="tu"><img src="images/jiazhuang4.png_.webp" alt=""></div>
+                            <div class="zi">DIY电脑</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/jiazhuang5.png_.webp" alt=""></div>
+                            <div class="zi">柜类</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/jiazhuang6.png_.webp" alt=""></div>
+                            <div class="zi">平板电脑</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="biao">家电</div>
+                    <div class="top">
+                        <div class="cont">
+                            <div class="tu"><img src="images/jiadian1.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">手机配件</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/jiadian2.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">笔记本</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/jiadian3.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">床</div>
+                        </div>
+                    </div>
+                    <div class="top">
+                        <div class="cont">
+                            <div class="tu"><img src="images/jiadian4.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">DIY电脑</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/jiadian5.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">柜类</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/jiadian6.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">平板电脑</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="biao">通信</div>
+                    <div class="top">
+                        <div class="cont">
+                            <div class="tu"><img src="images/tongxin1.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">手机配件</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/tongxin2.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">笔记本</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/tongxin3.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">床</div>
+                        </div>
+                    </div>
+                    <div class="top">
+                        <div class="cont">
+                            <div class="tu"><img src="images/tongxin4.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">DIY电脑</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/shuma1.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">柜类</div>
+                        </div>
+                        <div class="cont">
+                            <div class="tu"><img src="images/shuma2.jpg_.webp.jpg" alt=""></div>
+                            <div class="zi">平板电脑</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--banner-->
+    <div class="header">
+        <div class="nav icon-font icon-nav2"></div>
+        <input class="search-box" placeholder="搜索商品/店铺">
+            <div class="search icon-font icon-tianxiandaoiconsousuo"></div>
+
+    </div>
+
+    <div class="swiper-container" id='banner'>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/banner1.jpg.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/banner2.jpg.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/banner8.jpg.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/banner3.jpg.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/banner4.jpg.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/banner5.jpg.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/banner6.jpg.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/banner7.jpg.webp" alt="">
+            </div>
+
+
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <!--<div class="swiper-button-prev"></div>-->
+        <!--<div class="swiper-button-next"></div>-->
+
+        <!-- 如果需要滚动条 -->
+        <!--<div class="swiper-scrollbar"></div>-->
+    </div>
+
+    <!--fenlei-->
+    <div class="fenlei-box">
+        <div class="fenlei">
+            <div class="category-iteam">
+                <div class="icons">
+                    <img src="images/jifen.png.webp" alt="">
+                </div>
+                <span>积分乐园</span>
+            </div>
+            <div class="category-iteam">
+                <div class="icons">
+                    <img src="images/chong.png.webp" alt="">
+                </div>
+                <span>充值</span>
+            </div>
+            <div class="category-iteam">
+                <div class="icons">
+                    <img src="images/jinkou.png.webp" alt="">
+                </div>
+                <span>天猫国际</span>
+            </div>
+            <div class="category-iteam">
+                <div class="icons">
+                    <img src="images/ju.png.webp" alt="">
+                </div>
+                <span>聚划算</span>
+            </div>
+            <div class="category-iteam">
+                <div class="icons">
+                    <img src="images/chaoshi.png.webp" alt="">
+                </div>
+                <span>天猫超市</span>
+            </div>
+            <div class="category-iteam">
+                <div class="icons">
+                    <img src="images/shi.png.webp" alt="">
+                </div>
+                <span>免费试用</span>
+            </div>
+            <div class="category-iteam">
+                <div class="icons">
+                    <img src="images/youwu.png.webp" alt="">
+                </div>
+                <span>尤物</span>
+            </div>
+            <div class="category-iteam">
+                <div class="icons">
+                    <img src="images/fans.png.webp" alt="">
+                </div>
+                <span>粉丝趴</span>
+            </div>
+            <div class="category-iteam" >
+                <div class="icons">
+                    <img src="images/bao.png.webp" alt="">
+                </div>
+                <span>领钱了</span>
+            </div>
+            <div class="category-iteam">
+                <div class="icons">
+                    <img src="images/nav.png.webp" alt="">
+                </div>
+                <span>分类</span>
+            </div>
+        </div>
+    </div>
+    <div class="advertion">
+        <div class="adsLeft">
+            <img src="images/hot.png.webp" alt="">
+        </div>
+        <div class="adsHorn icon-font icon-laba"></div>
+        <div class="adsRight">
+            <div class="swiper-container" id="ads">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <span class='black-zi'>天猫早市：39.9元买5斤绿心猕猴桃</span>
+                        <span class='red-zi'>抢100元无门槛红包</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class='black-zi'>一指美拍十级美颜，华为nova新上市</span>
+                        <span class='red-zi'>0元预约+买就赠移动电源</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class='black-zi'>喵鲜生倾力推荐——华盛顿加力果</span>
+                        <span class='red-zi'>49元新鲜上市+减10 元</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class='black-zi'>天猫超市联手清风，屯纸大作战特惠立减</span>
+                        <span class='red-zi'>爆款5折起+卫生纸巾买二付一</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Leftwhell">
+        <div class="whells">
+            <img src="images/moring.jpg.webp" alt="">
+        </div>
+        <div class="whells">
+            <img src="images/live.jpg.webp" alt="">
+        </div>
+        <!-- <div class="whells">
+            <img src="images/banjia.jpg.webp" alt="">
+        </div> -->
+    </div>
+    <div class="hot-box">
+        <div class="content-title">
+            <div class="title-box">
+                <div class="line"></div>
+                <span class="titleIcon icon-font icon-huo1"></span>
+                <span class="titleWen">必抢</span>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="hot-content">
+            <div class="hot-iteams">
+                <div class="hot-title">今日必抢</div>
+                <div class="hot-img">
+                    <img src="images/hot1.jpg.webp" alt="">
+                </div>
+                <div class="hot-piece">
+                    <span class="hot-red">￥27</span>
+                    <span class="hot-del">￥50</span>
+                </div>
+            </div>
+            <div class="hot-iteams">
+                <div class="hot-title">聚超值</div>
+                <div class="hot-img">
+                    <img src="images/hot2.jpg.webp" alt="">
+                </div>
+                <div class="hot-piece">
+                    <span class="hot-red">￥59</span>
+                    <span class="hot-del">￥328</span>
+                </div>
+            </div>
+            <div class="hot-iteams">
+                <div class="hot-title">进口必抢</div>
+                <div class="hot-img">
+                    <img src="images/hot3.jpg.webp" alt="">
+                </div>
+                <div class="hot-piece">
+                    <span class="hot-red">￥19</span>
+                    <span class="hot-del">￥59</span>
+                </div>
+            </div>
+            <div class="hot-iteams">
+                <div class="hot-title">型男咖</div>
+                <div class="hot-img">
+                    <img src="images/hot4.png.webp" alt="">
+                </div>
+                <div class="hot-piece">
+                    <span class="hot-red">￥69</span>
+                    <span class="hot-del">￥198</span>
+                </div>
+            </div>
+            <div class="hot-iteams">
+                <div class="hot-title">环球购</div>
+                <div class="hot-img">
+                    <img src="images/hot5.png.webp" alt="">
+                </div>
+                <div class="hot-piece">
+                    <span class="hot-red">￥36</span>
+                    <span class="hot-del">￥60</span>
+                </div>
+            </div>
+            <div class="hot-iteams">
+                <div class="hot-title">女神范</div>
+                <div class="hot-img">
+                    <img src="images/hot6.jpg.webp" alt="">
+                </div>
+                <div class="hot-piece">
+                    <span class="hot-red">￥22</span>
+                    <span class="hot-del">￥30</span>
+                </div>
+            </div>
+            <div class="hot-iteams">
+                <div class="hot-title">爱囤货</div>
+                <div class="hot-img">
+                    <img src="images/hot7.jpg.webp" alt="">
+                </div>
+                <div class="hot-piece">
+                    <span class="hot-red">￥29</span>
+                    <span class="hot-del">￥138</span>
+                </div>
+            </div>
+            <div class="hot-iteams">
+                <div class="hot-title">翻倍减</div>
+                <div class="hot-img">
+                    <img src="images/hot8.jpg.webp" alt="">
+                </div>
+                <div class="hot-piece">
+                    <span class="hot-red">￥18</span>
+                    <span class="hot-del">￥57</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="brand-box">
+        <div class="brand-title">
+            <div class="title-box">
+                <div class="line"></div>
+                <span class="titleIcon icon-font icon-xingxing"></span>
+                <span class="titleWen">品牌特卖</span>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="brand-content">
+            <div class="brand-iteams">
+                <img src="images/brand1.jpg_.webp.jpg" alt="">
+            </div>
+            <div class="brand-iteams">
+                <img src="images/brand2.jpg_.webp.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="zixun-box">
+        <div class="zixun-title">
+            <div class="title-box">
+                <div class="line"></div>
+                <span class="titleIcon icon-font icon-jingtanhao"></span>
+                <span class="titleWen">品牌资讯</span>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="zixun-content">
+            <div class="zixun-top">
+                <div class="zixun-iteams">
+                    <!--<div class="zx-titlew">-->
+                        <!--<span class="zx-title">品牌街</span>-->
+                        <!--<span class="zx-ts">针织重塑经典</span>-->
+                    <!--</div>-->
+                    <!--<div class="zx-img">-->
+                    <!--</div>-->
+                    <img src="images/zx1.jpg_.webp.jpg" alt="">
+                </div>
+                <div class="zixun-iteams">
+                    <img src="images/zx2.jpg_.webp.jpg" alt="">
+                </div>
+                <div class="zixun-iteams">
+                    <img src="images/zx3.jpg_.webp.jpg" alt="">
+                </div>
+            </div>
+            <div class="zixun-bottom">
+                <img src="images/zx4.jpg_.webp.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="life-box">
+        <div class="life-title">
+            <div class="title-box">
+                <div class="line"></div>
+                <span class="titleIcon icon-font icon-lanzi"></span>
+                <span class="titleWen">便捷生活</span>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="life-content">
+            <div class="life-left">
+                <img src="images/life1.jpg_.webp.jpg" alt="">
+            </div>
+            <div class="life-right">
+                <div class="life-rs">
+                    <img src="images/life2.jpg_.webp.jpg" alt="">
+                </div>
+                <div class="life-rs">
+                    <img src="images/life3.jpg_.webp.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="internet-box">
+        <div class="internet-title">
+            <div class="title-box">
+                <div class="line"></div>
+                <span class="titleIcon icon-font icon-feiji"></span>
+                <span class="titleWen">国际海购</span>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="internet-content">
+            <div class="internet-iteams">
+                <img src="images/internet1.jpg_.webp.jpg" alt="">
+            </div>
+            <div class="internet-iteams">
+                <img src="images/internet2.png_.webp.jpg" alt="">
+            </div>
+            <div class="internet-iteams">
+                <img src="images/internet3.jpg_.webp.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="maket-box">
+        <div class="maket-title">
+            <div class="title-box">
+                <div class="line"></div>
+                <span class="titleIcon icon-font icon-yifu"></span>
+                <span class="titleWen">精选市场</span>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="maket-content">
+            <div class="maket-top">
+                <div class="maket-tops">
+                    <img src="images/maket.jpg_.webp.jpg" alt="">
+                </div>
+                <div class="maket-tops">
+                    <img src="images/maket2.jpg_.webp.jpg" alt="">
+                </div>
+                <div class="maket-tops">
+                    <img src="images/maket3.jpg_.webp.jpg" alt="">
+                </div>
+                <div class="maket-tops">
+                    <img src="images/maket4.jpg_.webp.jpg" alt="">
+                </div>
+            </div>
+            <div class="maket-bottom">
+                <div class="maket-bottoms">
+                    <img src="images/maket5.jpg_.webp.jpg" alt="">
+                </div>
+                <div class="maket-bottoms">
+                    <img src="images/maket6.jpg_.webp.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="love-box">
+        <div class="love-title">
+            <div class="title-box">
+                <div class="line"></div>
+                <span class="titleIcon icon-font icon-jingtanhao"></span>
+                <span class="titleWen">爱生活</span>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="love-content">
+            <div class="love-iteams">
+                <img src="images/love1.jpg_.webp.jpg" alt="">
+            </div>
+            <div class="love-iteams">
+                <img src="images/love2.jpg_.webp.jpg" alt="">
+            </div>
+            <div class="love-iteams">
+                <img src="images/love3.jpg_.webp.jpg" alt="">
+            </div>
+            <div class="love-iteams">
+                <img src="images/love4.jpg_.webp.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cool-box">
+        <div class="cool-title">
+            <div class="title-box">
+                <div class="line"></div>
+                <span class="titleIcon icon-font icon-shouji1"></span>
+                <span class="titleWen">潮店酷玩</span>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="cool-content">
+            <div class="cool-iteams">
+                <img src="images/cool1.jpg_.webp.jpg" alt="">
+            </div>
+            <div class="cool-iteams">
+                <img src="images/cool2.jpg_.webp.jpg" alt="">
+            </div>
+            <div class="cool-iteams">
+                <img src="images/cool3.jpg_.webp.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="industry-box">
+        <div class="industry-title">
+            <div class="title-box">
+                <div class="line"></div>
+                <span class="titleIcon icon-font icon-bao1"></span>
+                <span class="titleWen">热门行业</span>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="industry-content">
+            <div class="industry-top">
+                <div class="industry-ts">
+                    <div class="industry-topt">
+                        <span class="indus-twen1">电器城</span>
+                        <span class="indus-twen2">十点抢券</span>
+                        <div class="indus-timg">
+                            <img src="images/int1.png_.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="industry-toimg">
+                        <img src="images/int2.jpg_.webp.jpg" alt="">
+                    </div>
+                </div>
+                <div class="industry-ts">
+                    <div class="industry-topt">
+                        <span class="indus-twen1">男鞋女鞋</span>
+                        <span class="indus-twen2">品牌潮流精选</span>
+                        <div class="indus-timg">
+                            <img src="images/int3.png_.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="industry-toimg">
+                        <img src="images/int4.png_.webp.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="industry-bottom">
+
+                <div class="industry-bs">
+                    <span class="indus-twen1">美妆</span>
+                    <span class="indus-twen2">爱美必备</span>
+                    <div class="industry-toimg">
+                        <img src="images/int5.jpg_.webp.jpg" alt="">
+                    </div>
+                </div>
+                <div class="industry-bs">
+                    <span class="indus-twen1">天猫男装</span>
+                    <span class="indus-twen2">潮流品质之选</span>
+                    <div class="industry-toimg">
+                        <img src="images/int6.jpg_.webp.jpg" alt="">
+                    </div>
+                </div>
+                <div class="industry-bs">
+                    <span class="indus-twen1">天猫家装</span>
+                    <span class="indus-twen2">打造甜蜜家</span>
+                    <div class="industry-toimg">
+                        <img src="images/int7.png_.webp.jpg" alt="">
+                    </div>
+                </div>
+                <div class="industry-bs">
+                    <span class="indus-twen1">母婴玩具</span>
+                    <span class="indus-twen2">精选大牌尖货</span>
+                    <div class="industry-toimg">
+                        <img src="images/int8.png_.webp.jpg" alt="">
+                    </div>
+                </div>
+                <div class="industry-bs">
+                    <span class="indus-twen1">美食美酒</span>
+                    <span class="indus-twen2">新品抢鲜尝</span>
+                    <div class="industry-toimg">
+                        <img src="images/int9.png_.webp.jpg" alt="">
+                    </div>
+                </div>
+                <div class="industry-bs">
+                    <span class="indus-twen1">天猫女装</span>
+                    <span class="indus-twen2">精选好货</span>
+                    <div class="industry-toimg">
+                        <img src="images/int10.png_.webp.jpg" alt="">
+                    </div>
+                </div>
+                <div class="industry-bs">
+                    <span class="indus-twen1">家纺家饰</span>
+                    <span class="indus-twen2">温暖宜家</span>
+                    <div class="industry-toimg">
+                        <img src="images/int11.png_.webp.jpg" alt="">
+                    </div>
+                </div>
+                <div class="industry-bs">
+                    <span class="indus-twen1">更多</span>
+                    <span class="indus-twen2">聪明如你</span>
+                    <div class="industry-toimg">
+                        <img src="images/int12.jpg_.webp.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="flagship-box">
+        <div class="flagship-title">
+            <div class="title-box">
+                <div class="line"></div>
+                <span class="titleIcon icon-font icon-qijiandian"></span>
+                <span class="titleWen">品牌旗舰</span>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="flagship-content">
+            <div class="flagship-top">
+                <div class="flagship-ts">
+                    <div class="flag-ttop">
+                        <div class="flag-tleft">
+                            <img src="images/flag1.jpg_.webp.jpg" alt="">
+                        </div>
+                        <div class="flag-tright">
+                            <div class="flag-trs">
+                                <img src="images/flag12.jpg_.webp.jpg" alt="">
+                            </div>
+                            <div class="flag-trs">
+                                <img src="images/flag13.jpg_.webp.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flag-tbottom">
+                        <div class="flag-logo">
+                            <img src="images/flag11.jpg_.webp.jpg" alt="">
+                        </div>
+                        <div class="flag-logor">
+                            <span class="dian">letstee官方旗舰店</span>
+                            <span class="fans">12.5 万粉丝</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flagship-ts">
+                    <div class="flag-ttop">
+                        <div class="flag-tleft">
+                            <img src="images/flag2.jpg_.webp.jpg" alt="">
+                        </div>
+                        <div class="flag-tright">
+                            <div class="flag-trs">
+                                <img src="images/flag22.jpg_.webp.jpg" alt="">
+                            </div>
+                            <div class="flag-trs">
+                                <img src="images/flag23.jpg_.webp.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flag-tbottom">
+                        <div class="flag-logo">
+                            <img src="images/flag21.jpg_.webp.jpg" alt="">
+                        </div>
+                        <div class="flag-logor">
+                            <span class="dian">莱克斯顿官方旗舰店</span>
+                            <span class="fans">5.2 万粉丝</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flagship-ts">
+                    <div class="flag-ttop">
+                        <div class="flag-tleft">
+                            <img src="images/flag3.jpg_.webp.jpg" alt="">
+                        </div>
+                        <div class="flag-tright">
+                            <div class="flag-trs">
+                                <img src="images/flag32.jpg_.webp.jpg" alt="">
+                            </div>
+                            <div class="flag-trs">
+                                <img src="images/flag33.jpg_.webp.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flag-tbottom">
+                        <div class="flag-logo">
+                            <img src="images/flag31.jpg_.webp.jpg" alt="">
+                        </div>
+                        <div class="flag-logor">
+                            <span class="dian">Aape官方旗舰店</span>
+                            <span class="fans">6.6 万粉丝</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flagship-ts">
+                    <div class="flag-ttop">
+                        <div class="flag-tleft">
+                            <img src="images/flag4.jpg_.webp.jpg" alt="">
+                        </div>
+                        <div class="flag-tright">
+                            <div class="flag-trs">
+                                <img src="images/flag42.jpg_.webp.jpg" alt="">
+                            </div>
+                            <div class="flag-trs">
+                                <img src="images/flag43.jpg_.webp.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flag-tbottom">
+                        <div class="flag-logo">
+                            <img src="images/flag41.jpg_.webp.jpg" alt="">
+                        </div>
+                        <div class="flag-logor">
+                            <span class="dian">plory官方旗舰店</span>
+                            <span class="fans">29.8 万粉丝</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="flagship-bottom">
+                <div class="flagship-bs">
+                    <span class="flag-twen1">Hold女神</span>
+                    <span class="flag-twen2">国民老公</span>
+                    <div class="flag-toimg">
+                        <img src="images/flag5.png_.webp" alt="">
+                    </div>
+                </div>
+                <div class="flagship-bs">
+                    <span class="flag-twen1">踏青必备</span>
+                    <span class="flag-twen2">不负春光</span>
+                    <div class="flag-toimg">
+                        <img src="images/flag6.png_.webp" alt="">
+                    </div>
+                </div>
+                <div class="flagship-bs">
+                    <span class="flag-twen1">青春不散</span>
+                    <span class="flag-twen2">青春不迷茫</span>
+                    <div class="flag-toimg">
+                        <img src="images/flag7.jpg_.webp.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flagship-bs">
+                    <span class="flag-twen1">仙妻靓娃</span>
+                    <span class="flag-twen2">潮妈潮童</span>
+                    <div class="flag-toimg">
+                        <img src="images/flag8.png_.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="like-box">
+        <div class="like-title">
+            <div class="title-box">
+                <div class="line"></div>
+                <span class="titleWen">猜你喜欢</span>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="like-content">
+            <div class="like-iteams">
+                <div class="like-iimg">
+                    <img src="images/like1.jpg_.webp.jpg" alt="">
+                </div>
+                <div class="like-bottom">
+                    <span>[热卖]卓诗尼小白鞋女鞋秋鞋2016新款 单鞋运动鞋鞋子女休闲鞋</span>
+                    <span class="like-piece">￥168.0</span>
+                </div>
+            </div>
+            <div class="like-iteams">
+                <div class="like-iimg">
+                    <img src="images/like2.jpg_.webp.jpg" alt="">
+                </div>
+                <div class="like-bottom">
+                    <span>[热卖]艾斯臣短靴女春秋单靴马丁靴女平底冬季女鞋英伦风真皮</span>
+                    <span class="like-piece">￥158.0</span>
+                </div>
+            </div>
+            <div class="like-iteams">
+                <div class="like-iimg">
+                    <img src="images/like3.jpg_.webp.jpg" alt="">
+                </div>
+                <div class="like-bottom">
+                    <span>秋季针织外套女韩版学生宽松长袖秋冬2016新款毛衣开衫女装</span>
+                    <span class="like-piece">￥88.0</span>
+                </div>
+            </div>
+            <div class="like-iteams">
+                <div class="like-iimg">
+                    <img src="images/like4.jpg_.webp.jpg" alt="">
+                </div>
+                <div class="like-bottom">
+                    <span>连衣裙春秋季中长款2016秋装新款长袖宽松韩版大码女装打底</span>
+                    <span class="like-piece">￥139.0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-box"></div>
+</body>
+</html>
